@@ -1,0 +1,60 @@
+<exporter version="1.0">
+    <!-- identifier of the exporter -->
+    <name>laya</name>
+
+    <!-- display name of the exporter for the combo box -->
+    <displayName>LayaAir 2.0</displayName>
+
+    <!-- description of the exporter -->
+    <description>JSON format for LayaAir 2.0 By Lavender Ma @https://github.com/bjfumac/tp-laya </description>
+
+    <!-- exporter version -->
+    <version>1.0</version>
+
+    <!-- currently only one file allowed - more to come with update -->
+    <files>
+        <file>
+            <!-- name of this file variable -->
+            <name>json</name>
+
+            <!-- human readable name (for GUI) -->
+            <displayName>JSON file</displayName>
+
+            <!-- file extension for the file -->
+            <fileExtension>json</fileExtension>
+
+            <!-- description what the file contains, used in tooltips in the GUI -->
+            <description>JSON file for LayaAir 2.0</description>
+
+            <!-- name of the template file -->
+            <template>laya.json</template>
+
+            <!-- one json file for all multi-pack sheets -->
+            <hasSeparateMultiPackFiles>true</hasSeparateMultiPackFiles>
+        </file>
+    </files>
+
+
+    <!-- target framework supports trimming -->
+    <supportsTrimming>true</supportsTrimming>
+
+    <!-- target framework supports rotated sprites -->
+    <supportsRotation>false</supportsRotation>
+
+    <!-- rotated sprites direction (cw/ccw) -->
+    <rotationDirection>cw</rotationDirection>
+
+    <!-- supports npot sizes -->
+    <supportsNPOT>true</supportsNPOT>
+
+    <!-- supports file name stripping (remove .png etc) -->
+    <supportsTrimSpriteNames>yes</supportsTrimSpriteNames>
+
+    <!-- supports texure subpath -->
+    <supportsTextureSubPath>no</supportsTextureSubPath>
+
+    <supportsPivotPoint>true</supportsPivotPoint>
+
+    <supportsAnimations>false</supportsAnimations>
+
+</exporter>

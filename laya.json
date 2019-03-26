@@ -1,0 +1,20 @@
+{
+  "frames" : { {% for sprite in allSprites %}
+    "{{sprite.fullName}}" : {
+      "frame":{
+        "idx": 0,
+        "x" : {{sprite.frameRect.x}},
+        "y" : {{sprite.frameRect.y}},
+        "w" : {{sprite.frameRect.width}},
+        "h" : {{sprite.frameRect.height}}
+      },
+      "sourceSize": { "w":{{sprite.untrimmedSize.width}}, "h":{{sprite.untrimmedSize.height}} },
+      "spriteSourceSize": { "x":{{sprite.sourceRect.x}}, "y":{{sprite.sourceRect.y}}, "w":{{sprite.sourceRect.width}}, "h":{{sprite.sourceRect.height}} }
+    }{% if not forloop.last %}, {% endif %}{% endfor %}
+  },
+  "meta": {
+    "image": "{{texture.fullName}}",
+    "prefix": "{{texture.trimmedName}}/",
+    "scale": "{{variantParams.scale}}"
+  }
+}
